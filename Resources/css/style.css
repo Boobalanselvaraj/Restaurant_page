@@ -1,0 +1,240 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Roboto:wght@400;500;900&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&family=Poppins:wght@300&family=Roboto:wght@400;500;900&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+  /* 
+font-family: 'Josefin Sans', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Pacifico', cursive;
+  */
+*{
+    padding: 0;
+    margin: 2px;
+    font-family: 'Poppins', sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+h3{
+    color: #e52165;
+
+}
+a{
+    text-decoration: none;
+    color: rgb(196, 196, 196);
+}
+body{
+    background:linear-gradient(to left ,rgba(46, 37, 37, 0.797),rgba(11, 1, 1, 0.852)),url('./../img/rsturant.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 500px;
+
+}
+.name{
+    min-width: 90vb;
+    color: #e52165;
+    font-size: 24px;
+    font-family: 'Pacifico', cursive;
+}
+.header{
+    height: 70px;
+    display: flex;
+    position: relative;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+.content{
+    min-width: 90vb;
+    margin-right: 15px;
+    display: flex;
+    width: 40%;
+    justify-content: space-between;
+}
+.content li::after{
+    content:'';
+    display: block;
+    background-color: #e52165;
+    height: 2px;
+    transform: scaleX(0);
+    transition: 500ms;
+   
+}
+.content li:hover::after{
+    transform: scaleX(1);
+   
+}
+.content li{
+    list-style-type: none; 
+}
+.interface{
+    color: #e52165;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+.interface h2{
+    color: aliceblue;
+}
+
+/* ....................MENU.................... */
+.menu-items{
+    display: block;
+    margin-top: 427px;
+    color: #e52165;
+    
+}
+.menu-items h3{
+    font-family: 'Pacifico', cursive;
+}
+.menu-itemOne{
+    display: inline-block;
+
+}
+.image-div{
+    height: 400px;
+    width: 400px;
+    image-orientation:from-image;
+    transition: 300ms;
+}
+.image-div:hover{
+    height: 404px;
+    width: 404px;
+    filter: drop-shadow(9px 9px 10px rgb(56, 54, 54));
+}
+.item-name{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translate(-5%,-5%);
+}
+.item-name p{
+    color: #e52165;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    
+}
+.about-food{
+  height: 600px;
+  width: 100%;
+
+}
+.about-it{
+    
+    display: block;
+    position: relative;
+    background-size: 100%;
+}
+.para-food{
+    display: inline-block;
+    position:absolute ;
+    height: 497px;
+    width: 700px;
+    right: 10px;
+    top: 18%;
+}
+.para-food p{
+
+    font-size: 20px;
+    text-align:start;
+}
+.para-food h2{
+    margin-bottom: 10px;
+}
+.slogan{
+    
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    margin-top: 80px;
+    margin-left: 20%;
+    color: #e52165;
+    position: absolute;
+   
+}
+/*........................................MENU CARD .....................................................*/
+.table-head {
+    font-weight: bold;
+}
+.table-head td{
+    position:relative;
+    align-items: center;
+    text-align: center;
+}
+.starter-table{
+    border-collapse: collapse;
+    margin: 20px 0;
+    margin-left: 25px;
+    font-size: 18px;
+    border-radius: 20px;
+    /* min-width: 400px; */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+
+}
+.starter-table td,
+.starter-table th{
+    padding: 10px 2px;
+
+}
+.starter-table thead tr{
+    background-color:rgb(249, 249, 149);
+    color: black;
+    text-align: left;
+
+}
+.starter-table tbody tr{
+    border-bottom: 1px solid rgb(249, 249, 149);
+}
+.starter-table tbody tr:nth-of-type(even){
+    background-color: lightyellow;
+}
+
+.starter-table tbody tr:last-of-type {
+    border-bottom: 3px solid #ddff00;
+}
+/* ......................................ABOUT SECTION........................................... */
+
+.about-section {
+    padding: 40px;
+    text-align: center;
+    background-color: #474e5d;
+    color: white;
+  }
+  .column {
+    
+    width: 30%;
+    margin-bottom: 16px;
+    padding: 0 8px;
+  }
+  
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin: 8px;
+  }
+  .button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    transition: 500ms;
+  }
+  .title {
+    color: grey;
+  }
+  
+  .button:hover {
+    color: black;
+    font-weight: bold;
+    background-color: #e52165;
+  }
+  /* ......................................CONTACT SECTION........................................... */
+  .contact-section {
+    padding: 40px;
+    text-align: center;
+    background-color: #474e5d;
+    color: white;
+  }
